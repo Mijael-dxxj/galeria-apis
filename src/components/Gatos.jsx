@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./gatos.css"; 
+import "./Gatos.css"; 
 
 function Gatos() {
     const [gatos, setGatos] = useState([]); 
