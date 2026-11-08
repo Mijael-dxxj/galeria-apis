@@ -1,0 +1,145 @@
+.perros-galeria {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #3e2723 !important;
+}
+
+.perros-titulo {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #271510 !important;
+}
+
+.perros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.perro-card {
+  background-color: #ffffff !important;
+  border: 1px solid #e8e2d9 !important;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(93, 64, 55, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.perro-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(93, 64, 55, 0.15);
+}
+
+.perro-imagen-wrapper {
+  width: 100%;
+  height: 220px;
+  background-color: #f3efe9;
+  overflow: hidden;
+}
+
+.perro-imagen-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.perro-card:hover .perro-imagen-wrapper img {
+  transform: scale(1.05);
+}
+
+.perro-info {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #ffffff !important;
+}
+
+.perro-raza {
+  color: #2e7d32 !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.perro-nombre {
+  font-size: 1.2rem;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+  color: #3e2723 !important;
+}
+
+.perro-descripcion {
+  font-size: 0.9rem;
+  color: #5c554e !important;
+  line-height: 1.5;
+  margin: 0 0 1.25rem 0;
+}
+
+.perro-enlace {
+  margin-top: auto;
+  align-self: flex-start;
+  color: #ffffff !important;
+  background-color: #8d6e63 !important;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.perro-enlace:hover {
+  background-color: #795548 !important;
+}
+
+.perros-acciones {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.perros-btn-ver-mas {
+  background-color: #f7f5f0 !important;
+  color: #5d4037 !important;
+  border: 2px solid #e0dcd3 !important;
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.perros-btn-ver-mas:hover:not(:disabled) {
+  background-color: #ffb74d !important;
+  color: #ffffff !important;
+  border-color: #ffa726 !important;
+  transform: translateY(-1px);
+}
+
+.perros-btn-ver-mas:disabled {
+  background-color: #eaeaea !important;
+  color: #999999 !important;
+  cursor: not-allowed;
+  border-color: #dddddd !important;
+}
+
+.perros-error {
+  color: #c62828 !important;
+  background-color: #efebe9 !important;
+  border: 1px solid #d7ccc8 !important;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: 1rem auto;
+  max-width: 600px;
+}
